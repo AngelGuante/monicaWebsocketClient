@@ -1,7 +1,7 @@
 using Dapper;
 using System;
-using System.Text;
-using monicaWebsocketClient.Models.DTO.Reportes;
+using Newtonsoft.Json;
+using static monicaWebsocketClient.Program;
 using static monicaWebsocketClient.Utils.Querys;
 using static monicaWebsocketClient.Utils.GlobalVariables;
 
@@ -23,8 +23,8 @@ namespace monicaWebsocketClient
                 case (int)ClientMessageStatusEnum.IndividualClientStatusReport:
                     try
                     {
-                        var dd = Conn.Query<IndividualClientStatusDTO>(IndividualClientStatusQuery(dataSplited[1]));
-
+                        var resultset = Conn.Query(IndividualClientStatusQuery(dataSplited[1]));
+                        SendMessageAsync(JsonConvert.SerializeObject(resultset));
                     }
                     catch (Exception e)
                     {

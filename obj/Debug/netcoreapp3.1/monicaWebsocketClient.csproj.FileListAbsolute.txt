@@ -19,3 +19,12 @@ D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcorea
 D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\obj\Debug\netcoreapp3.1\monicaWebsocketClient.csproj.CopyComplete
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Mis cosas\I\Proyectos\.Net\.Net Core\monicaWebsocketClient\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
