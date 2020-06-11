@@ -18,7 +18,5 @@ namespace monicaWebsocketClient.Utils
                 return _conn;
             }
         }
-
-        public static string[] DbNames { get; } = { "monica10" };
     }
 }

@@ -14,6 +14,8 @@ namespace monicaWebsocketClient
 
         static void Main(string[] args)
         {
+            AppDomain.CurrentDomain.ProcessExit += EndConnectionAsync;
+
             Task.Run(async () =>
             {
                 await ConnectToServerAsync();
@@ -26,6 +28,7 @@ namespace monicaWebsocketClient
         {
             try
             {
+                Console.WriteLine("ws://monicawebsocketserver.azurewebsites.net/ws");
                 // await _client.ConnectAsync(new Uri($"ws://localhost:5000/ws"), CancellationToken.None);
                 await _client.ConnectAsync(new Uri($"ws://monicawebsocketserver.azurewebsites.net/ws"), CancellationToken.None);
 
@@ -42,16 +45,14 @@ namespace monicaWebsocketClient
                             byte[] messageBytes = message.Skip(message.Offset).Take(result.Count).ToArray();
                             string serialisedMessage = Encoding.UTF8.GetString(messageBytes);
 
-                           Message(serialisedMessage);
-
-
+                            Message(serialisedMessage);
                         } while (!result.EndOfMessage);
                     }
                 });
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Message($"Error: {e.Message}");
             }
         }
 
@@ -67,8 +68,11 @@ namespace monicaWebsocketClient
             }
             catch (Exception e)
             {
-                Console.WriteLine($"-MENSAGE: ERROR: {e.Message}");
+                Message($"Error: {e.Message}");
             }
         }
+
+        public static async void EndConnectionAsync(object sender, EventArgs e) =>
+            await _client.CloseAsync(WebSocketCloseStatus.NormalClosure, "close", CancellationToken.None);
     }
 }
