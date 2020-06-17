@@ -14,6 +14,9 @@ namespace monicaWebsocketClient
             Console.WriteLine(data);
             try
             {
+                if (data == string.Empty)
+                    throw new Exception("No se recivió ningún query.");
+
                 var resultset = Conn.Query(data);
                 Console.WriteLine("Devolviendo resultset...");
                 Console.WriteLine("------------------------");
